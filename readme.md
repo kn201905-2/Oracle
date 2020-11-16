@@ -6,7 +6,7 @@ $ sudo su -
 # apt install vim
 ```
 
-# iptables の調整
+# iptables で通信ポートの調整
 
 # SSH ポート変更（iptables で、ポートを通信可能にしてから行うこと）
 ```
