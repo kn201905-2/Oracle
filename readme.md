@@ -12,6 +12,11 @@ $ sudo su -
 ---
 # iptables で通信ポートの調整
 
+```
+（参考）
+https://www.virment.com/how-to-change-port-for-ssh-in-oracle-cloud/
+```
+
 ---
 # SSH ポート変更（iptables で、ポートを通信可能にしてから行うこと）
 ```
