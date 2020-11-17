@@ -1,3 +1,4 @@
+---
 # RLogin で SSH接続後
 ```
 $ sudo su -
@@ -5,9 +6,10 @@ $ sudo su -
 # apt upgrade
 # apt install vim
 ```
-
+---
 # iptables で通信ポートの調整
 
+---
 # SSH ポート変更（iptables で、ポートを通信可能にしてから行うこと）
 ```
 # cd /etc/ssh
