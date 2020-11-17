@@ -1,4 +1,3 @@
----
 # RLogin で SSH接続後
 ```
 $ sudo su -
