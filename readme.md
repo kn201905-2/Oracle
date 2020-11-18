@@ -23,6 +23,8 @@ https://www.virment.com/how-to-change-port-for-ssh-in-oracle-cloud/
 * 現在は、以下の２つのみを設定
 -A INPUT -s '自分のアドレス' -j ACCEPT
 -A OUTPUT -p tcp --dport 80 -j ACCEPT   # proxy の監視用
+-A OUTPUT -d '自分のアドレス' -j ACCEPT   # 下りの通信量の監視用
+-A OUTPUT -j ACCEPT   # 不要な通信がないかの監視用
 ```
 
 ---
