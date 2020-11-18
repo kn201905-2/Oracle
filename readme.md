@@ -15,6 +15,10 @@ $ sudo su -
 ```
 （参考）
 https://www.virment.com/how-to-change-port-for-ssh-in-oracle-cloud/
+
+* /etc/iptables/rules.v4 を直接書き換えるのが簡単
+* 以下を実行して、iptablesを再読込して完了
+/etc/init.d/netfilter-persistent reload
 ```
 
 ---
