@@ -40,3 +40,31 @@ https://www.virment.com/how-to-change-port-for-ssh-in-oracle-cloud/
 ```
 https://console.ap-osaka-1.oraclecloud.com/compute/instances
 ```
+
+---
+# code-server のインストール
+参考URL:  
+https://github.com/cdr/code-server  
+https://github.com/cdr/code-server/blob/v3.7.4/doc/install.md
+```
+# curl -fsSL https://code-server.dev/install.sh | sh
+...
+To have systemd start code-server now and restart on boot:
+  sudo systemctl enable --now code-server@$USER
+Or, if you don't want/need a background service you can run:
+  code-server
+```
+* 設定ファイルの書き換え
+```
+# cd ~/.config/code-server
+# vim config.yaml
+
+bind-addr: 0.0.0.0:****
+（auth: none）
+```
+* code-server の起動
+```
+# code-server
+```
+
+
