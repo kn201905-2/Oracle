@@ -49,6 +49,14 @@ https://console.ap-osaka-1.oraclecloud.com/compute/instances
 ```
 ---
 # iptables に関する syslog を分離する  
+* rsyslog が入っているかの確認
+```
+# systemctl status rsyslog
+
+もし、rsyslog が入っていなければ
+# apt install rsyslog
+```
+
 * iptables のログ出力は syslog が担っているため、syslog の出力にフィルタを掛ける。  
 /etc/rsyslog.d/ にフィルタを記述したファイルを置けば、フィルタが掛かるようになる。
 
