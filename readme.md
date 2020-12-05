@@ -66,6 +66,10 @@ bind-addr: 0.0.0.0:****
 ```
 # code-server
 ```
+* 右下の設定アイコンから「Color Theme」を選択 -> Dark テーマに変更  
+* 「Ctrl + p」でコマンドパレットを開き、「setting.json」を選択し、適切に設定する
+
+
 ---
 # プロキシ（squid）の設定
 ```
