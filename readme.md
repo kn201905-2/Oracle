@@ -66,5 +66,23 @@ bind-addr: 0.0.0.0:****
 ```
 # code-server
 ```
+---
+# プロキシ（squid）の設定
+```
+# apt install squid
+# systemctl status squid
+```
+* vim で http_access を検索し（ノーマルモードで /http_access + リターン。その後、「n」or「N」で検索）
+
+```
+設定ファイルは /etc/squid/squid.conf
+以下のみに。それ以外は、コメントアウト
+http_access allow all
+```
+* vim で http_port を検索し、http プロキシのポート番号を変更
+```
+http_port 3128 を変更
+```
+* 以上の設定で、とりあえずはプロキシで接続可能となる
 
 
