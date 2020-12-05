@@ -36,6 +36,12 @@ https://www.virment.com/how-to-change-port-for-ssh-in-oracle-cloud/
 # ls -la
 ```
 * sshd_config の Port を変更（先頭付近にあるから、すぐに分かるはず）
+```
+# vim sshd_config
+
+「#Port 22」を変更する
+```
+
 * 再起動（再起動は、以下の URL を用いて行った）
 ```
 https://console.ap-osaka-1.oraclecloud.com/compute/instances
