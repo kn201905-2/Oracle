@@ -130,4 +130,18 @@ http_port 3128 を変更
 ```
 * 以上の設定で、とりあえずはプロキシで接続可能となる
 
+---
+# コマンドプロンプトの変更
+* 以下を、~/.bashrc に追記  
+　一時的なお試しなら、`export PS1=""`
+ 
+ ```
+ PS1="\[\e[1;32m\][OCI-proxy: \w]\[\e[0m\]\n\\$ "
+ 
+ 色の変更は \[\e[ と m/] で囲む
+ 緑色： 32、黄色： 33、青色： 34、パープル： 35、シアン： 36、白色: 37
+ ```
+参考 URL：  
+https://www.atmarkit.co.jp/flinux/rensai/linuxtips/002cngprmpt.html  
+https://shio-ax.hatenablog.com/entry/2019/05/27/174018  
 
