@@ -83,7 +83,7 @@ https://access.redhat.com/documentation/ja-jp/red_hat_enterprise_linux/7/html/sy
 https://vogel.at.webry.info/201311/article_4.html  
 
 ---
-# ログローテーション  
+# ログローテーション（うまくいかなかったため保留中）  
 * /etc/logrotate.d に設定ファイルを作成することにより、ローテートを行う  
 2019-10-20　ローテーションの設定ファイルは、「/etc/logrotate.d/rsyslog」を参考にして作成した。設定ファイルの書き方に関するネットでの情報は、Linux のディストリビューションや、バージョンごとの差異があり不明な点が多かったため、現時点では、現OSが走っている設定ファイルを真似することにした。  
 
