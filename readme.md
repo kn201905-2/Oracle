@@ -145,3 +145,9 @@ http_port 3128 を変更
 https://www.atmarkit.co.jp/flinux/rensai/linuxtips/002cngprmpt.html  
 https://shio-ax.hatenablog.com/entry/2019/05/27/174018  
 
+---
+# タイムゾーンの変更
+* 通常は `# ln -s /usr/share/zoneinfo/Asia/Tokyo /etc/localtime` で良いが、そもそも `Asia/Tokyo` の情報がインストールされていなかったため、以下で変更。
+```
+# apt install tzdata
+```
