@@ -177,3 +177,36 @@ https://shio-ax.hatenablog.com/entry/2019/05/27/174018
 ```
 # apt install tzdata
 ```
+
+---
+# Docker のインストール
+```
+https://docs.docker.com/engine/install/ubuntu/
+
+# apt update
+
+# apt install apt-transport-https ca-certificates curl gnupg-agent software-properties-common
+
+Docker の公式 GPG鍵のインストール
+# curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+
+公開鍵の確認
+# apt-key fingerprint 0EBFCD88
+
+公式リポジトリの追加
+# add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+
+# apt update
+
+# apt install docker-ce docker-ce-cli containerd.io
+
+インストールが成功したことの確認
+# docker run hello-world
+```
+
+* アンインストールの方法
+```
+# apt purge docker-ce docker-ce-cli containerd.io
+
+# rm -rf /var/lib/docker
+```
