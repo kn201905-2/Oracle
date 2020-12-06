@@ -83,6 +83,32 @@ https://access.redhat.com/documentation/ja-jp/red_hat_enterprise_linux/7/html/sy
 https://vogel.at.webry.info/201311/article_4.html  
 
 ---
+# ログローテーション  
+* /etc/logrotate.d に設定ファイルを作成することにより、ローテートを行う  
+2019-10-20　ローテーションの設定ファイルは、「/etc/logrotate.d/rsyslog」を参考にして作成した。設定ファイルの書き方に関するネットでの情報は、Linux のディストリビューションや、バージョンごとの差異があり不明な点が多かったため、現時点では、現OSが走っている設定ファイルを真似することにした。  
+
+\# touch /etc/logrotate.d/iptables  
+\# vim /etc/logrotate.d/iptables  
+
+> /var/log/iptables.log  
+> {  
+> 　missingok  
+> 　notifempty  
+> 　daily  
+> 　rotate 15  
+> 　create 766  
+> 　dateext  
+> 　dateformat _%Y-%m-%d  
+> 　postrotate  
+>　　systemctl kill -s HUP rsyslog.service  
+> 　endscript  
+> 　su syslog adm  
+> }  
+
+* 設定ファイルの動作確認　# logrotate -d /etc/logrotate.d/iptables  
+「-d」は dry run を表す。実際には実行せずに、動作確認だけを行う。  
+
+---
 # code-server のインストール
 参考URL:  
 https://github.com/cdr/code-server  
