@@ -22,3 +22,12 @@
 以下のようにすると、任意のバージョンに切り替えることができる
 # n 9.11.2
 ```
+
+---
+# firebase への CUI によるログイン
+```
+# firebase login --no-localhost
+
+自分のブラウザで開くと、authorization code が発行される。
+このコードを貼り付ければ、login できる。
+```
