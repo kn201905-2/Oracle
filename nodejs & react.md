@@ -78,6 +78,17 @@ PS1="\[\e[1;33m\][OCI-VM-docker: \w]\[\e[0m\]\n\\$ "
 
 （重要）
 ・public directory -> build を入力
+・SPA -> yes
+・Git -> no
+```
+* firestore のルールの書き換え
+```
+firestore.rules を以下のようにする。（今回は、既にそうなっていたが、、）
+
+allow write: if request.auth.uid != null;
 ```
 
-
+---
+```
+# npm run build
+```
