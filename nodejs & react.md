@@ -91,4 +91,13 @@ allow write: if request.auth.uid != null;
 ---
 ```
 # npm run build
+
+functions/src/index.ts を書き換え
+
+以下をコメントアウト（先頭行）
+// import * as functions from 'firebase-functions';
+
+# firebase deploy
+
+deploy が完了すると、Hosting URL が表示される。そこにアクセスして deploy が成功していることを確認する。
 ```
