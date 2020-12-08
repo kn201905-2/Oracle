@@ -50,7 +50,7 @@ PS1="\[\e[1;33m\][OCI-VM-docker: \w]\[\e[0m\]\n\\$ "
 
 /public/index.html に、以下を追加
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
-
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 
 ```
 
