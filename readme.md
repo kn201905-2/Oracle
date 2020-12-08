@@ -109,9 +109,7 @@ https://vogel.at.webry.info/201311/article_4.html
 「-d」は dry run を表す。実際には実行せずに、動作確認だけを行う。  
 
 ---
-~~
-# code-server のインストール
-~~
+# ~~code-server v3 のインストール~~（その後、不安定に感じたため v1 にした）
 参考URL:  
 https://github.com/cdr/code-server  
 https://github.com/cdr/code-server/blob/v3.7.4/doc/install.md
@@ -138,6 +136,25 @@ bind-addr: 0.0.0.0:****
 * 右下の設定アイコンから「Color Theme」を選択 -> Dark テーマに変更  
 * 「Ctrl + p」でコマンドパレットを開き、「setting.json」を選択し、適切に設定する
 
+---
+# code-server v1 のインストール
+```
+# wget https://github.com/cdr/code-server/releases/download/1.1156-vsc1.33.1/code-server1.1156-vsc1.33.1-linux-x64.tar.gz  
+# tar xvzf code-server1.1156-vsc1.33.1-linux-x64.tar.gz（z は gzip の指定）
+```
+* 以上で code-server は利用可能となる。（tar で展開すると、展開したフォルダの中に「code-server」という実行ファイルがある。それを実行すれば、code-server が立ち上がる。） 今回は、以下のような起動用バッチファイルを作成した。
+```
+#!/bin/bash
+code-server1.1156-vsc1.33.1-linux-x64/code-server -p 3010 -N
+
+・-p でリスンするポート番号を指定
+・-N でパスワード無しでログイン可能となる
+・その他のオプションに関しては、code-server --help で調べると良い
+```
+* settings.json を、以下の位置にコピー
+```
+~/.local/share/code-server/User
+```
 
 ---
 # プロキシ（squid）の設定
