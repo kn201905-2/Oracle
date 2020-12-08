@@ -46,6 +46,11 @@ PS1="\[\e[1;33m\][OCI-VM-docker: \w]\[\e[0m\]\n\\$ "
 
 "start": "PORT=80 react-scripts start",
 
+# npm install --save @material-ui/core @material-ui/icons @material-ui/system
+
+/public/index.html に、以下を追加
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+
 
 ```
 
