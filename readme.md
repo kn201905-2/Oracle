@@ -109,7 +109,9 @@ https://vogel.at.webry.info/201311/article_4.html
 「-d」は dry run を表す。実際には実行せずに、動作確認だけを行う。  
 
 ---
-~~ # code-server のインストール ~~
+~~
+# code-server のインストール
+~~
 参考URL:  
 https://github.com/cdr/code-server  
 https://github.com/cdr/code-server/blob/v3.7.4/doc/install.md
