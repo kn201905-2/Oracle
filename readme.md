@@ -142,7 +142,8 @@ bind-addr: 0.0.0.0:****
 # wget https://github.com/cdr/code-server/releases/download/1.1156-vsc1.33.1/code-server1.1156-vsc1.33.1-linux-x64.tar.gz  
 # tar xvzf code-server1.1156-vsc1.33.1-linux-x64.tar.gz（z は gzip の指定）
 ```
-* 以上で code-server は利用可能となる。（tar で展開すると、展開したフォルダの中に「code-server」という実行ファイルがある。それを実行すれば、code-server が立ち上がる。） 今回は、以下のような起動用バッチファイルを作成した。
+* 以上で code-server は利用可能となる。（tar で展開すると、展開したフォルダの中に「code-server」という実行ファイルがある。それを実行すれば、code-server が立ち上がる。） 今回は、以下のような起動用バッチファイルを作成した。  
+* 以下のバッチファイルを起動したフォルダが、エディットできるフォルダのルートとなる。
 ```
 #!/bin/bash
 code-server1.1156-vsc1.33.1-linux-x64/code-server -p 3010 -N
