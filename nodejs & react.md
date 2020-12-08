@@ -51,14 +51,19 @@ PS1="\[\e[1;33m\][OCI-VM-docker: \w]\[\e[0m\]\n\\$ "
 /public/index.html に、以下を追加
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-
 ```
 
 ---
 # firebase への CUI によるログイン
 ```
+# npm install -g firebase-tools
+
+# npm install --save firebase
+
 # firebase login --no-localhost
 
 自分のブラウザで開くと、authorization code が発行される。
 このコードを貼り付ければ、login できる。
 ```
+
+
