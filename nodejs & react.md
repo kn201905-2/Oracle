@@ -41,6 +41,12 @@ PS1="\[\e[1;33m\][OCI-VM-docker: \w]\[\e[0m\]\n\\$ "
 ```
 * chatbot フォルダは、host と共有の位置にあるものを。
 # npx create-react-app chatbot
+
+# vim package.json
+
+"start": "PORT=80 react-scripts start",
+
+
 ```
 
 ---
