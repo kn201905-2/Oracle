@@ -37,6 +37,11 @@ PS1="\[\e[1;33m\][OCI-VM-docker: \w]\[\e[0m\]\n\\$ "
 以下のようにすると、任意のバージョンに切り替えることができる
 # n 9.11.2
 ```
+---
+```
+* chatbot フォルダは、host と共有の位置にあるものを。
+# npx create-react-app chatbot
+```
 
 ---
 # firebase への CUI によるログイン
