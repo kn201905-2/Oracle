@@ -7,7 +7,7 @@
 
 # vim .bashrc
 
-PS1="\[\e[1;33m\][OCI-docker: \w]\[\e[0m\]\n\\$ "
+PS1="\[\e[1;33m\][OCI-VM-docker: \w]\[\e[0m\]\n\\$ "
 ```
 
 ---
