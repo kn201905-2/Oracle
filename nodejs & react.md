@@ -64,6 +64,20 @@ PS1="\[\e[1;33m\][OCI-VM-docker: \w]\[\e[0m\]\n\\$ "
 
 自分のブラウザで開くと、authorization code が発行される。
 このコードを貼り付ければ、login できる。
+
+# firebase init
+
+・Firestore、Functions、Hosting の３つを選択
+・Use an existing project を選択
+・既存のプロジェクトを選択
+・firesotre.rules を選択
+・firestore.indexes.json を選択
+・Typescript を選択
+・ESLint はどちらでも
+・dependency -> yes
+
+（重要）
+・public directory -> build を入力
 ```
 
 
