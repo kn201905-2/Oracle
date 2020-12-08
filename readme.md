@@ -109,7 +109,7 @@ https://vogel.at.webry.info/201311/article_4.html
 「-d」は dry run を表す。実際には実行せずに、動作確認だけを行う。  
 
 ---
-# ~~code-server v3 のインストール~~（その後、不安定に感じたため v1 にした）
+# code-server v3 のインストール（v1 も v3 も重いような、、）
 参考URL:  
 https://github.com/cdr/code-server  
 https://github.com/cdr/code-server/blob/v3.7.4/doc/install.md
@@ -137,7 +137,7 @@ bind-addr: 0.0.0.0:****
 * 「Ctrl + p」でコマンドパレットを開き、「setting.json」を選択し、適切に設定する
 
 ---
-# code-server v1 のインストール
+# ~~code-server v1 のインストール~~（v1 も重かった、、）
 ```
 # wget https://github.com/cdr/code-server/releases/download/1.1156-vsc1.33.1/code-server1.1156-vsc1.33.1-linux-x64.tar.gz  
 # tar xvzf code-server1.1156-vsc1.33.1-linux-x64.tar.gz（z は gzip の指定）
