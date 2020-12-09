@@ -10,6 +10,7 @@
 PS1="\[\e[1;33m\][OCI-VM-docker: \w]\[\e[0m\]\n\\$ "
 
 # apt install -y curl
+# apt install -y iptables
 ```
 
 ---
