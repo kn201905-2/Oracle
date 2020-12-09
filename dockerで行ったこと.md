@@ -107,6 +107,6 @@ deploy が完了すると、Hosting URL が表示される。そこにアクセ�
 ```
 https://console.firebase.google.com/u/1/project/chatbot-firebase-500a3/functions/list
 
-curl -X POST -H "Content-Type: application/json" -d @dataset.json https://us-central1-chatbot-firebase-500a3.cloudfunctions.net/addDataset
+# curl -X POST -H "Content-Type: application/json" -d @dataset.json https://us-central1-chatbot-firebase-500a3.cloudfunctions.net/addDataset
 ```
 
