@@ -110,3 +110,8 @@ https://console.firebase.google.com/u/1/project/chatbot-firebase-500a3/functions
 # curl -X POST -H "Content-Type: application/json" -d @dataset.json https://us-central1-chatbot-firebase-500a3.cloudfunctions.net/addDataset
 ```
 
+---
+# firebase のホスティング停止
+```
+# firebase hosting:disable
+```
