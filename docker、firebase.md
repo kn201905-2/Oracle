@@ -17,6 +17,7 @@ PS1="\[\e[1;33m\][OCI-VM-docker: \w]\[\e[0m\]\n\\$ "
 # JST に設定
 ```
 # apt update
+以下をせずに、Japan のデータだけを持ってきてもよい
 # apt install tzdata
 # ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
 ```
