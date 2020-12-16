@@ -14,6 +14,14 @@ PS1="\[\e[1;33m\][OCI-VM-docker: \w]\[\e[0m\]\n\\$ "
 ```
 
 ---
+# JST に設定
+```
+# apt update
+# apt install tzdata
+# ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
+```
+
+---
 # nodejs をインストールする
 * `# apt install nodejs` とすると、古いバージョンがインストールされる（2020-12 時点では、v8.10）  
 * n package を利用して、以下のようにインストールする
